@@ -9,7 +9,7 @@ const Service = ({ service }: { service: ServiceProps }) => {
           <img
             src={service.img}
             alt={service.title}
-            className="w-[200px] h-[70px]"
+            className="w-[230px] h-[70px]"
           />
         </div>
         <div>
