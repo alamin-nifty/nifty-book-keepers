@@ -5,7 +5,7 @@ type Props = {};
 
 const ConsultationForm = (props: Props) => {
   return (
-    <div className="w-[80%]  mt-10 p-6 bg-white rounded-md shadow-md ">
+    <div className="md:w-[80%]  w-full mt-10 p-6 bg-white rounded-md shadow-md ">
       <h2 className="text-2xl font-semibold mb-6">Free Consultation</h2>
       <form>
         <div className="mb-4 ">

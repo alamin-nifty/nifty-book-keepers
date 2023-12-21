@@ -37,8 +37,10 @@ const reviews = [
 ];
 const Reviews = () => {
   return (
-    <div className="w-[full] h-[485px] mx-[10%]">
-      <p className="text-4xl font-bold ">What Our Clients Are Saying</p>
+    <div className="w-[full] md:h-[485px] h-full mx-[10%]">
+      <p className="md:text-4xl text-2xl font-bold ">
+        What Our Clients Are Saying
+      </p>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -51,9 +53,9 @@ const Reviews = () => {
         {reviews.map((review) => {
           return (
             <SwiperSlide>
-              <div className="w-[880px] h-[372px] p-[20px] my-12">
-                <div className="flex items-startjustify-center gap-20">
-                  <div className="w-[200px] h-[200px]  ">
+              <div className="md:w-[880px] md:h-[372px] w-full h-full md:p-[20px] p-2 md:my-12 my-5">
+                <div className="flex md:flex-row flex-col md:items-start items-center justify-center md:gap-20 gap-5">
+                  <div className="md:w-[200px] md:h-[200px] w-[100px] h-[100px] ">
                     <img
                       src={review.img}
                       alt={review.title}
@@ -64,7 +66,7 @@ const Reviews = () => {
                     <div className="text-left">
                       <p>{review.description}</p>
                     </div>
-                    <div className="flex items-start mt-20">
+                    <div className="flex md:items-start md:justify-start items-center justify-center md:mt-20 mt-5">
                       <li className="flex items-center justify-center">
                         {Array.from({ length: 5 }).map((_, index) => (
                           <span key={index}>
@@ -73,7 +75,7 @@ const Reviews = () => {
                         ))}
                       </li>
                     </div>
-                    <div className="flex flex-col justify-start items-start mt-3">
+                    <div className="flex flex-col md:justify-start md:items-start items-center justify-center mt-3 py-2">
                       <p className="text-lg font-bold">{review.name}</p>
                       <p className="text-sm">{review.title}</p>
                     </div>

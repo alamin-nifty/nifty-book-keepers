@@ -54,7 +54,7 @@ const PriceLists = () => {
       <p className="text-4xl font-semibold my-10">
         Choose From Our Various Pricing Plans...
       </p>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
         {priceLists.map((list) => {
           return (
             <div className=" bg-gray-100 shadow-md  rounded-md">

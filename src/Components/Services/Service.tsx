@@ -3,13 +3,13 @@ import { ServiceProps } from "./Services";
 
 const Service = ({ service }: { service: ServiceProps }) => {
   return (
-    <div className="bg-slate-100 shadow-lg 5 p-10 rounded-md">
-      <div className="p-4 flex items-start justify-start gap-6">
-        <div className="">
+    <div className="bg-slate-100 shadow-lg  md:p-10 p-5 rounded-md">
+      <div className="p-4 md:flex items-start justify-start gap-6">
+        <div className="md:my-0 my-5 md:block flex justify-center items-center">
           <img
             src={service.img}
             alt={service.title}
-            className="w-[230px] h-[70px]"
+            className="md:w-[230px] w-[100px] h-[70px]"
           />
         </div>
         <div>

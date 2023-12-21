@@ -14,7 +14,11 @@ const Diagram = (props: Props) => {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <img src="/assets/images/diagram/diagram.svg" alt="Diagram" />
+        <img
+          src="/assets/images/diagram/diagram.svg"
+          alt="Diagram"
+          className="w-full h-full"
+        />
       </div>
     </div>
   );

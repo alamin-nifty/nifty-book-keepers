@@ -5,8 +5,8 @@ type Props = {};
 
 const Extra = (props: Props) => {
   return (
-    <div className="w-full h-[230px] bg-[#1875BB] mt-28 mb-20">
-      <div className="h-full flex items-center justify-between mx-[20%]">
+    <div className="w-full md:h-[230px] h-full bg-[#1875BB] mt-28 mb-20">
+      <div className="h-full flex items-center justify-between md:mx-[20%] mx-[5%] md:py-0 py-5">
         <div className="text-white text-center">
           <p>
             Do you have any questions, need personalized financial advice, or

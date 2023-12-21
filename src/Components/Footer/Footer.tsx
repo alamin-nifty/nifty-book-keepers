@@ -7,7 +7,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className=" bg-gray-50">
-      <div className="mx-[10%] flex items-start justify-between py-10 h-[400px]">
+      <div className="mx-[10%] grid md:grid-cols-2 grid-cols-1 items-start justify-between py-10 md:h-[400px] h-full">
         <div className="flex flex-col justify-between  h-full ">
           <div>
             <img
@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-start justify-end gap-x-28">
+        <div className="flex items-start justify-end gap-x-28 md:my-0 mt-14">
           <div>
             <ul className="flex flex-col  text-right gap-5">
               <li className=" hover:text-gray-700 cursor-pointer">

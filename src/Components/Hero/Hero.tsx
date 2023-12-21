@@ -5,15 +5,15 @@ export const transationForButton = {
 };
 const Hero = () => {
   return (
-    <div className="flex h-screen justify-center items-center flex-col ">
+    <div className="flex md:h-screen h-full justify-center items-center flex-col ">
       <div
         className="relative w-full h-screen bg-cover bg-center bg-[url('/assets/images/hero.jpg')] overflow-hidden "
         // style={{ backgroundImage: `url('hero.png')` }}
       >
-        <div className="absolute w-full h-[1000px] flex rounded-full  -top-[20%] right-[35%]  justify-center items-center bg-[#1875BBD9] opacity-[85] overflow-hidden">
-          <div className="flex items-center justify-center w-[680px] ml-[30%]">
+        <div className="absolute w-full  2xl:h-[1240px] xl:h-[1000px] h-screen   flex justify-center items-center md:rounded-full  md:-top-[20%] md:right-[35%]    bg-[#1875BBD9] opacity-[85] overflow-hidden">
+          <div className="flex items-center justify-center w-[680px] md:ml-[30%]">
             <div className="p-10">
-              <p className="text-white text-6xl font-bold w-full pb-3  text-left leading-normal capitalize">
+              <p className="text-white md:text-6xl text-3xl font-bold w-full pb-3  text-left leading-normal capitalize">
                 Keeping your business on track is our expertise
               </p>
               <p className="leading-normal text-white text-lg text-left">
@@ -21,14 +21,14 @@ const Hero = () => {
                 hassle-free. Let us handle the numbers while you focus on what
                 you do best!
               </p>
-              <div className="">
+              <div className=" flex flex-col md:inline-flex md:flex-row md:justify-center md:items-start items-center justify-start md:gap-5 gap-1 md:mt-0 mt-5">
                 <button
                   className={`bg-[#ffffff] text-[#1875BBD9] text-lg font-bold py-3 px-8 rounded-full mt-5 uppercase hover:bg-slate-200 ${transationForButton.smoothTranstation}`}
                 >
                   Get Started
                 </button>
                 <button
-                  className={`border border-white text-white text-lg font-bold py-3 px-8 rounded-full mt-5 ml-5 hover:bg-black hover:text-white uppercase  ${transationForButton.smoothTranstation}`}
+                  className={`border border-white text-white text-lg font-bold py-3 px-8 rounded-full mt-5  hover:bg-black hover:text-white uppercase  ${transationForButton.smoothTranstation}`}
                 >
                   {" "}
                   Learn More

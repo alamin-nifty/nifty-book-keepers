@@ -5,8 +5,8 @@ type Props = {};
 
 const Extra2 = (props: Props) => {
   return (
-    <div className="w-full h-[230px] bg-[#1875BB] mt-28 mb-20">
-      <div className="h-full flex items-center justify-center mx-[20%]">
+    <div className="w-full md:h-[230px] h-full bg-[#1875BB] mt-28 mb-20">
+      <div className="h-full flex items-center justify-center md:mx-[20%] mx-[5%] md:py-0 py-5 ">
         <div className="text-white text-center">
           <p className="font-semibold text-xl">
             Are you ready to take everyday bookkeeping tasks off your list?

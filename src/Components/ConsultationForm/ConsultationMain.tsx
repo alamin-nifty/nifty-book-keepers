@@ -6,7 +6,7 @@ type Props = {};
 
 const ConsultationMain = (props: Props) => {
   return (
-    <div className="grid grid-cols-2 gap-20 mx-[10%] my-28">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 mx-[10%] ,d:my-28 my-16">
       <ConsultationDescription />
       <ConsultationForm />
     </div>

@@ -5,9 +5,9 @@ type Props = {};
 
 const Consultaion = (props: Props) => {
   return (
-    <div className="w-full h-[230px] bg-[#1875BB] mt-28 mb-20">
-      <div className="h-full flex items-center justify-between mx-[10%]">
-        <div className="flex justify-center items-center gap-16">
+    <div className="w-full md:h-[230px] h-full bg-[#1875BB] mt-28 mb-20 md:py-0 py-10">
+      <div className="h-full flex md:flex-row flex-col items-center justify-between mx-[10%]">
+        <div className="flex md:flex-row flex-col justify-center items-center md:gap-16  gap-4">
           <div>
             <img src="/assets/Logo/reliable.png" alt="reliable" />
             <p className="text-white p-3">Reliable</p>
@@ -21,10 +21,12 @@ const Consultaion = (props: Props) => {
             <p className="text-white p-3">Accurtae</p>
           </div>
         </div>
-        <div className="text-white">
-          <p>Experience the ease of bookkeeping with us!</p>
+        <div className="text-white md:my-0 my-5 text-center">
+          <p className="md:font-normal font-semibold md:text-base text-xl">
+            Experience the ease of bookkeeping with us!
+          </p>
           <button
-            className={`bg-white text-[#1875BB] text-xl font-bold p-3 px-5 rounded-full mt-8 hover:bg-gray-300 ${transationForButton.smoothTranstation}`}
+            className={`bg-white text-[#1875BB] md:text-xl font-bold p-3 px-5 rounded-full mt-8 hover:bg-gray-300 ${transationForButton.smoothTranstation}`}
           >
             SCHEDULE A FREE CONSULTATION
           </button>

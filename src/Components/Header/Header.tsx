@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
 import { FiPhone } from "react-icons/fi";
@@ -23,18 +24,19 @@ const Header = (props: Props) => {
           className="cursor-pointer"
         />
       </div>
-      <div className="flex ">
+
+      <div className={`flex items-center justify-center`}>
         <button className={headerStyle.button}>
-          <FiPhone className="w-7 h-7 mx-1" />
-          <p>+1 (323)-388-4703</p>
+          <FiPhone className="w-7 h-7 mx-1 " />
+          <p className="hidden md:block">+1 (323)-388-4703</p>
         </button>
         <button className={headerStyle.button}>
           <MdMailOutline className="w-7 h-7 mx-1" />
-          <p>info@niftybookkeepers.com</p>
+          <p className="hidden md:block">info@niftybookkeepers.com</p>
         </button>
         <button className={headerStyle.button}>
           <CiLinkedin className="w-7 h-7 mx-1" />
-          <p>LinkedIn</p>
+          <p className="hidden md:block">LinkedIn</p>
         </button>
       </div>
     </header>
