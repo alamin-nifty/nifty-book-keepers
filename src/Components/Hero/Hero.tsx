@@ -10,10 +10,10 @@ const Hero = () => {
         className="relative w-full h-screen bg-cover bg-center bg-[url('/assets/images/hero.jpg')] overflow-hidden "
         // style={{ backgroundImage: `url('hero.png')` }}
       >
-        <div className="absolute w-full  2xl:h-[1240px] xl:h-[1000px] lg:h-[1700px] md:h-[1400px] h-screen   flex justify-center items-center xl:rounded-full  lg:-top-[20%] xl:right-[35%]    bg-[#1875BBD9] opacity-[85] overflow-hidden">
-          <div className="flex items-center justify-center w-[680px] xl:ml-[30%]">
+        <div className="absolute w-full  2xl:h-[1240px] xl:h-[1400px] lg:min-h-full min-h-full  flex justify-center items-center xl:rounded-full   xl:-top-[20%] xl:right-[35%]  bg-[#1875BBD9] opacity-[85] overflow-hidden">
+          <div className="flex items-center justify-center w-[680px] xl:ml-[30%] ">
             <div className="p-10">
-              <p className="text-white md:text-6xl text-3xl font-bold w-full pb-3  text-left lg:leading-loose xl:leading-normal md:leading-normal capitalize xl:py-0 lg:py-10 md:py-5">
+              <p className="text-white md:text-6xl text-3xl font-bold w-full pb-3  text-left   capitalize xl:py-0 lg:py-5 md:py-5">
                 Keeping your business on track is our expertise
               </p>
               <p className="leading-normal text-white text-lg text-left xl:py-0 lg:py-10 md:py-5">
