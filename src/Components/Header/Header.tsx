@@ -28,15 +28,15 @@ const Header = (props: Props) => {
       <div className={`flex items-center justify-center`}>
         <button className={headerStyle.button}>
           <FiPhone className="w-7 h-7 mx-1 " />
-          <p className="hidden md:block">+1 (323)-388-4703</p>
+          <p className="hidden lg:block">+1 (323)-388-4703</p>
         </button>
         <button className={headerStyle.button}>
           <MdMailOutline className="w-7 h-7 mx-1" />
-          <p className="hidden md:block">info@niftybookkeepers.com</p>
+          <p className="hidden lg:block">info@niftybookkeepers.com</p>
         </button>
         <button className={headerStyle.button}>
           <CiLinkedin className="w-7 h-7 mx-1" />
-          <p className="hidden md:block">LinkedIn</p>
+          <p className="hidden lg:block">LinkedIn</p>
         </button>
       </div>
     </header>

@@ -40,7 +40,7 @@ const Services = () => {
       <p className="my-8 md:text-4xl text-2xl font-bold">
         What You Get With Nifty Bookkeepers
       </p>
-      <div className="relative grid md:grid-cols-2 grid-cols-1 gap-8 my-8">
+      <div className="relative grid lg:grid-cols-2 grid-cols-1 gap-8 my-8">
         {servicesItem.map((item: ServiceProps) => {
           return <Service service={item} />;
         })}
