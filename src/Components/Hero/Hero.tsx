@@ -1,9 +1,9 @@
 import React from "react";
 
+export const transationForButton = {
+  smoothTranstation: "transation-all duration-500 ease-in-out transform  ",
+};
 const Hero = () => {
-  const transationForButton = {
-    smoothTranstation: "transation-all duration-500 ease-in-out transform  ",
-  };
   return (
     <div className="flex h-screen justify-center items-center flex-col ">
       <div
@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
               <div className="">
                 <button
-                  className={`bg-[#ffffff] text-[#1875BBD9] text-lg font-bold py-3 px-8 rounded-full mt-5 uppercase hover:bg-slate-100 ${transationForButton.smoothTranstation}`}
+                  className={`bg-[#ffffff] text-[#1875BBD9] text-lg font-bold py-3 px-8 rounded-full mt-5 uppercase hover:bg-slate-200 ${transationForButton.smoothTranstation}`}
                 >
                   Get Started
                 </button>

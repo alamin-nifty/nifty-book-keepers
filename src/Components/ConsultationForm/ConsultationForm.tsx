@@ -1,4 +1,5 @@
 import React from "react";
+import { transationForButton } from "../Hero/Hero";
 
 type Props = {};
 
@@ -55,7 +56,7 @@ const ConsultationForm = (props: Props) => {
         <div className="flex justify-center items-center">
           <button
             type="submit"
-            className=" bg-blue-500 text-white py-2 px-8 rounded-full hover:bg-blue-600"
+            className={` bg-[#1875BB] text-white py-2 px-8 rounded-full  hover:bg-gray-500 ${transationForButton.smoothTranstation}`}
           >
             Submit
           </button>

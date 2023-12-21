@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMdCheckmark } from "react-icons/io";
+import { transationForButton } from "../Hero/Hero";
 
 const priceLists = [
   {
@@ -56,8 +57,8 @@ const PriceLists = () => {
       <div className="grid grid-cols-3 gap-10">
         {priceLists.map((list) => {
           return (
-            <div className=" bg-gray-100 shadow-md">
-              <div className="flex flex-col justify-center items-center py-10 rounded-md px-10 ">
+            <div className=" bg-gray-100 shadow-md  rounded-md">
+              <div className="flex flex-col justify-center items-center py-10  px-10 ">
                 <p className="text-3xl font-bold pb-3">{list.title}</p>
                 <p
                   style={{
@@ -75,7 +76,9 @@ const PriceLists = () => {
                 <p className="border border-green-500 border-dotted p-2 bg-green-200 text-green-500 font-semibold rounded-md">
                   {list.discount}
                 </p>
-                <button className="bg-[#1875BB] py-2 px-6 rounded-full text-white my-5 font-semibold">
+                <button
+                  className={`bg-[#1875BB] hover:bg-gray-500 py-2 px-6 rounded-full text-white my-5 font-semibold ${transationForButton.smoothTranstation}}`}
+                >
                   SUBSCRIBE
                 </button>
                 <span className="w-2/3 p-[1px] bg-gray-600  my-10"></span>

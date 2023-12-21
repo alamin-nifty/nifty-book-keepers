@@ -1,4 +1,5 @@
 import React from "react";
+import { transationForButton } from "../Hero/Hero";
 
 type Props = {};
 
@@ -22,7 +23,9 @@ const Consultaion = (props: Props) => {
         </div>
         <div className="text-white">
           <p>Experience the ease of bookkeeping with us!</p>
-          <button className="bg-white text-[#1875BB] text-xl font-bold p-3 rounded-full mt-8">
+          <button
+            className={`bg-white text-[#1875BB] text-xl font-bold p-3 px-5 rounded-full mt-8 hover:bg-gray-300 ${transationForButton.smoothTranstation}`}
+          >
             SCHEDULE A FREE CONSULTATION
           </button>
         </div>
