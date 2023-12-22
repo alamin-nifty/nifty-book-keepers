@@ -6,6 +6,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdMailOutline } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { transationForButton } from "../Hero/Hero";
+import Link from "next/link";
 type Props = {};
 
 const Header = (props: Props) => {
@@ -14,16 +15,18 @@ const Header = (props: Props) => {
   };
   return (
     <header className="flex justify-between items-center p-5 bg-white shadow-md md:px-10 z-20">
-      <div>
-        <Image
-          src="/assets/Logo/Logo.png"
-          alt="Company Logo"
-          width={150}
-          height={60}
-          objectFit="contain"
-          className="cursor-pointer"
-        />
-      </div>
+      <Link href="https://niftybookkeepers.com/">
+        <div>
+          <Image
+            src="/assets/Logo/Logo.png"
+            alt="Company Logo"
+            width={150}
+            height={60}
+            objectFit="contain"
+            className="cursor-pointer"
+          />
+        </div>
+      </Link>
 
       <div className={`flex items-center justify-center`}>
         <button className={headerStyle.button}>

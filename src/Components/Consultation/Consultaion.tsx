@@ -1,9 +1,14 @@
 import React from "react";
 import { transationForButton } from "../Hero/Hero";
+import Link from "next/link";
 
 type Props = {};
 
 const Consultaion = (props: Props) => {
+  let date = new Date();
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let formattedDate = `${year}-${month < 10 ? `0${month}` : month}`;
   return (
     <div className="w-full md:h-[230px] h-full bg-[#1875BB] mt-28 mb-20 md:py-0 py-10">
       <div className="h-full flex md:flex-row flex-col items-center justify-between mx-[10%]">
@@ -25,11 +30,15 @@ const Consultaion = (props: Props) => {
           <p className="md:font-normal font-semibold md:text-base text-xl">
             Experience the ease of bookkeeping with us!
           </p>
-          <button
-            className={`bg-white text-[#1875BB] md:text-xl font-bold p-3 px-5 rounded-full mt-8 hover:bg-gray-300 ${transationForButton.smoothTranstation}`}
+          <Link
+            href={`https://calendly.com/sales-nifty/30min?month=${formattedDate}`}
           >
-            SCHEDULE A FREE CONSULTATION
-          </button>
+            <button
+              className={`bg-white text-[#1875BB] md:text-xl font-bold p-3 px-5 rounded-full mt-8 hover:bg-gray-300 ${transationForButton.smoothTranstation}`}
+            >
+              SCHEDULE A FREE CONSULTATION
+            </button>
+          </Link>
         </div>
       </div>
     </div>
