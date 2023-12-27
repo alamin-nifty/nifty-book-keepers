@@ -14,7 +14,7 @@ const Extra = (props: Props) => {
             wish to discuss your unique bookkeeping requirements? Our team at
             Nifty Bookkeepers is only a click away.
           </p>
-          <Link href="https://niftybookkeepers.com/services/">
+          <Link href="#priceList">
             {" "}
             <button
               className={`bg-white text-[#1875BB] hover:bg-gray-500 text-xl font-bold p-3 rounded-full mt-10 hover:text-white ${transationForButton.smoothTranstation}}`}

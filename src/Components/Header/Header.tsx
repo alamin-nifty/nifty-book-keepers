@@ -13,6 +13,8 @@ const Header = (props: Props) => {
   const headerStyle = {
     button: ` flex justify-between items-center text-black px-2 py-2 rounded-sm hover:bg-gray-100 border border-black mx-2 text-base font-[500] ${transationForButton.smoothTranstation}}`,
   };
+  const phoneNumber = "+1 (323)-388-4703";
+  const emailAddress = "info@niftybookkeepers.com";
   return (
     <header className="flex justify-between items-center p-5 bg-white shadow-md md:px-10 z-20">
       <Link href="https://niftybookkeepers.com/">
@@ -29,18 +31,28 @@ const Header = (props: Props) => {
       </Link>
 
       <div className={`flex items-center justify-center`}>
-        <button className={headerStyle.button}>
-          <FiPhone className="w-7 h-7 mx-1 " />
-          <p className="hidden lg:block">+1 (323)-388-4703</p>
-        </button>
-        <button className={headerStyle.button}>
-          <MdMailOutline className="w-7 h-7 mx-1" />
-          <p className="hidden lg:block">info@niftybookkeepers.com</p>
-        </button>
-        <button className={headerStyle.button}>
-          <CiLinkedin className="w-7 h-7 mx-1" />
-          <p className="hidden lg:block">LinkedIn</p>
-        </button>
+        <Link href={`tel:${phoneNumber}`} target="_blank">
+          <button className={headerStyle.button}>
+            <FiPhone className="w-7 h-7 mx-1 " />
+            <p className="hidden lg:block">{phoneNumber}</p>
+          </button>
+        </Link>
+
+        <Link href={`mailto:${emailAddress}`} target="_blank">
+          <button className={headerStyle.button}>
+            <MdMailOutline className="w-7 h-7 mx-1" />
+            <p className="hidden lg:block">info@niftybookkeepers.com</p>
+          </button>
+        </Link>
+        <Link
+          href="https://www.linkedin.com/company/nifty-bookkeepers-llc/"
+          target="_blank"
+        >
+          <button className={headerStyle.button}>
+            <CiLinkedin className="w-7 h-7 mx-1" />
+            <p className="hidden lg:block">LinkedIn</p>
+          </button>
+        </Link>
       </div>
     </header>
   );
