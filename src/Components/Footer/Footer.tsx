@@ -20,13 +20,13 @@ const Footer = (props: Props) => {
             <p className="text-semibold py-4">Find us!</p>
             <div className="flex items-center justify-start gap-2">
               <FaFacebookSquare className="w-6 h-6" />
-              <FaInstagram className="w-6 h-6" />
+              {/* <FaInstagram className="w-6 h-6" /> */}
               <FaLinkedin className="w-6 h-6" />
-              <FaXTwitter className="w-6 h-6" />
+              {/* <FaXTwitter className="w-6 h-6" /> */}
             </div>
           </div>
         </div>
-        <div className="flex items-start justify-end gap-x-28 md:my-0 mt-14">
+        {/* <div className="flex items-start justify-end gap-x-28 md:my-0 mt-14">
           <div>
             <ul className="flex flex-col  text-right gap-5">
               <li className=" hover:text-gray-700 cursor-pointer">
@@ -63,7 +63,7 @@ const Footer = (props: Props) => {
               <p>Bangladesh</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="bg-[#1875BB]">
         <p className="mx-[10%] text-white py-3 text-sm">
