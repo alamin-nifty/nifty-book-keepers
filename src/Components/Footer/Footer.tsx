@@ -10,12 +10,32 @@ const Footer = (props: Props) => {
       <div className="mx-[10%] grid md:grid-cols-2 grid-cols-1 items-start justify-between py-10 md:h-[400px] h-full">
         <div className="flex flex-col justify-between  h-full ">
           <div>
-            <img
-              src="/assets/Logo/footer-logo.svg"
-              alt="logo"
-              className="w-[250px] h-[100px]"
-            />
+            <div>
+              <img
+                src="/assets/Logo/footer-logo.svg"
+                alt="logo"
+                className="w-[250px] h-[100px]"
+              />
+            </div>
+            <div className="mt-10 text-sm">
+              <div className="">
+                <div />
+                <div>
+                  House # 8, Road # 6, Shekhertek, Mohammadpur
+                  <br /> Dhaka-1207, Bangladesh.
+                </div>
+              </div>
+              <div>
+                <div />
+                <div>info@bookingdei.com</div>
+              </div>
+              <div>
+                <div />
+                <div>+1 (323)-388-4703, +8801717457286</div>
+              </div>
+            </div>
           </div>
+
           <div>
             <p className="text-semibold py-4">Find us!</p>
             <div className="flex items-center justify-start gap-2">
