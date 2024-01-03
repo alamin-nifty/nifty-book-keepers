@@ -1,6 +1,8 @@
 import React from "react";
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
 
 type Props = {};
 
@@ -17,20 +19,26 @@ const Footer = (props: Props) => {
                 className="w-[250px] h-[100px]"
               />
             </div>
-            <div className="mt-10 text-sm">
-              <div className="">
-                <div />
+            <div className="mt-10 text-sm  flex flex-col gap-y-2">
+              <div className=" flex items-center gap-2">
+                <div>
+                  <FaLocationDot className="w-5 h-5" />
+                </div>
                 <div>
                   House # 8, Road # 6, Shekhertek, Mohammadpur
                   <br /> Dhaka-1207, Bangladesh.
                 </div>
               </div>
-              <div>
-                <div />
+              <div className=" flex items-center gap-2">
+                <div>
+                  <IoMdMail className="w-5 h-5" />
+                </div>
                 <div>info@bookingdei.com</div>
               </div>
-              <div>
-                <div />
+              <div className=" flex items-center gap-2">
+                <div>
+                  <FaPhoneAlt className="w-5 h-5" />
+                </div>
                 <div>+1 (323)-388-4703, +8801717457286</div>
               </div>
             </div>
