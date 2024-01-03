@@ -26,8 +26,8 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        {/* <div className="flex items-start justify-end gap-x-28 md:my-0 mt-14">
-          <div>
+        <div className="flex items-start justify-end gap-x-28 md:my-0 mt-14">
+          {/* <div>
             <ul className="flex flex-col  text-right gap-5">
               <li className=" hover:text-gray-700 cursor-pointer">
                 <a href="#">Home</a>
@@ -48,7 +48,7 @@ const Footer = (props: Props) => {
                 <a href="#">Contact Us</a>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <div className="mb-12 text-right">
               <p className="font-bold text-xl py-4">USA Office</p>
@@ -63,7 +63,7 @@ const Footer = (props: Props) => {
               <p>Bangladesh</p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
       <div className="bg-[#1875BB]">
         <p className="mx-[10%] text-white py-3 text-sm">
