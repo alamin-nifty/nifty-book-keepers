@@ -3,6 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import Link from "next/link";
 
 type Props = {};
 
@@ -49,7 +50,15 @@ const Footer = (props: Props) => {
             <div className="flex items-center justify-start gap-2">
               <FaFacebookSquare className="w-6 h-6" />
               {/* <FaInstagram className="w-6 h-6" /> */}
-              <FaLinkedin className="w-6 h-6" />
+              <Link
+                href={"https://linkedin.com/company/nifty-bookkeepers-llc/"}
+                target="_blank"
+                className="cursor-pointer"
+              >
+                {" "}
+                <FaLinkedin className="w-6 h-6" />
+              </Link>
+
               {/* <FaXTwitter className="w-6 h-6" /> */}
             </div>
           </div>
