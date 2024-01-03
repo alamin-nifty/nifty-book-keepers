@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ConsultationForm from "../ConsultationForm/ConsultationForm";
 
 export const transationForButton = {
   smoothTranstation: "transation-all duration-500 ease-in-out transform  ",
@@ -11,8 +12,8 @@ const Hero = () => {
         className="relative w-full h-screen bg-cover bg-center bg-[url('/assets/images/hero.jpg')] overflow-hidden "
         // style={{ backgroundImage: `url('hero.png')` }}
       >
-        <div className="absolute w-full  2xl:h-min-h-full xl:h-min-h-full lg:min-h-full min-h-full  flex justify-center items-center xl:rounded-full  xl:right-[35%]  bg-[#1875BBD9] opacity-[85] overflow-hidden">
-          <div className="flex items-center justify-center w-[680px] xl:ml-[30%] ">
+        <div className="absolute w-full  2xl:h-min-h-full xl:h-min-h-full lg:min-h-full min-h-full  flex justify-center items-center  bg-[#1875BBD9] opacity-[85] overflow-hidden">
+          <div className="flex items-center justify-center w-[680px]  ">
             <div className="p-10">
               <p className="text-white md:text-6xl text-3xl font-bold w-full pb-3  text-left   capitalize xl:py-0 lg:py-5 md:py-5">
                 Keeping your business on track is our expertise
@@ -41,6 +42,9 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
+          </div>
+          <div className="w-[500px]">
+            <ConsultationForm />
           </div>
         </div>
       </div>

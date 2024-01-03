@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { transationForButton } from "../Hero/Hero";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 type Props = {};
 
 const ConsultationForm = (props: Props) => {
+  const [phone, setPhone] = useState("+880");
   return (
     <div className="md:w-[80%]  w-full mt-10 p-6 bg-white rounded-md shadow-md ">
       <h2 className="text-2xl font-semibold mb-6">Free Consultation</h2>
@@ -18,11 +22,13 @@ const ConsultationForm = (props: Props) => {
           />
         </div>
         <div className="mb-4 ">
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
+          <PhoneInput
+            international
+            countryCallingCodeEditable={false}
+            defaultCountry="BD"
             placeholder="Phone Number"
+            value={phone}
+            onChange={(value) => setPhone(value || " ")}
             className="w-full p-2 border rounded-md shadow-md"
           />
         </div>
