@@ -7,13 +7,13 @@ export const transationForButton = {
 };
 const Hero = () => {
   return (
-    <div className="flex md:h-screen h-full justify-center items-center flex-col ">
+    <div className=" min-h-full  relative flex items-center justify-center">
       <div
-        className="relative w-full h-screen bg-cover bg-center bg-[url('/assets/images/hero.jpg')] overflow-hidden "
+        className="relative w-full min-h-screen  bg-cover bg-[url('/assets/images/hero.jpg')] "
         // style={{ backgroundImage: `url('hero.png')` }}
       >
-        <div className="absolute w-full  2xl:h-min-h-full xl:h-min-h-full lg:min-h-full min-h-full  flex justify-center items-center  bg-[#1875BBD9] opacity-[85] overflow-hidden">
-          <div className="flex items-center justify-center w-[680px]  ">
+        <div className=" w-full   min-h-screen   grid lg:grid-cols-2 grid-cols-1 gap-x-16 justify-center items-center  bg-[#1875BBD9] opacity-[85] ">
+          <div className="flex items-center justify-center w-full  mx-auto  ">
             <div className="p-10">
               <p className="text-white md:text-6xl text-3xl font-bold w-full pb-3  text-left   capitalize xl:py-0 lg:py-5 md:py-5">
                 Keeping your business on track is our expertise
@@ -43,7 +43,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="w-[500px]">
+          <div className=" w-full  px-[5%] my-4">
             <ConsultationForm />
           </div>
         </div>

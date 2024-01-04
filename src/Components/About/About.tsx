@@ -4,7 +4,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="relative w-full mt-20">
+    <div className=" relative w-full mt-20">
       <div className="mx-[10%]">
         <p className="text-4xl font-bold my-8">About Us</p>
         <p className="text-lg leading-normal">
