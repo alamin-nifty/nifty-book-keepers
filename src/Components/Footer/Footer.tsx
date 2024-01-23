@@ -34,13 +34,13 @@ const Footer = (props: Props) => {
                 <div>
                   <IoMdMail className="w-5 h-5" />
                 </div>
-                <div>info@bookingdei.com</div>
+                <div>info@niftybookkeepers.com</div>
               </div>
               <div className=" flex items-center gap-2">
                 <div>
                   <FaPhoneAlt className="w-5 h-5" />
                 </div>
-                <div>+1 (323)-388-4703, +8801717457286</div>
+                <div> +8801717457286</div>
               </div>
             </div>
           </div>
